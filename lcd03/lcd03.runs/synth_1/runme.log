@@ -1,0 +1,510 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 298.750 ; gain = 69.035
+Command: synth_design -top main -part xc7vx485tffg1761-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12720 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 415.816 ; gain = 102.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_generator' [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/clk_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
+INFO: [Synth 8-6155] done synthesizing module 'clk_generator' (2#1) [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/clk_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'switch_controller' [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/switch_controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'switch_controller' (3#1) [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/switch_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'lcd_162st_alternative' [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/new/lcd_162st_alternative.v:3]
+	Parameter cycles_per_us bound to: 200 - type: integer 
+	Parameter wait_power_on bound to: 3200000 - type: integer 
+	Parameter E_wait_d bound to: 40000 - type: integer 
+	Parameter E_wait bound to: 20000 - type: integer 
+	Parameter E_wait_h bound to: 10000 - type: integer 
+	Parameter S_START bound to: 0 - type: integer 
+	Parameter S_INIT1 bound to: 1 - type: integer 
+	Parameter S_INIT2 bound to: 2 - type: integer 
+	Parameter S_INIT3 bound to: 3 - type: integer 
+	Parameter S_INIT4 bound to: 4 - type: integer 
+	Parameter S_SET_PAR bound to: 5 - type: integer 
+	Parameter S_DISP_OFF bound to: 6 - type: integer 
+	Parameter S_DISP_CLR bound to: 7 - type: integer 
+	Parameter S_SET_ENTRY_MODE bound to: 8 - type: integer 
+	Parameter S_DISP_ON bound to: 9 - type: integer 
+	Parameter S_SET_STR1 bound to: 10 - type: integer 
+	Parameter S_WRITE1 bound to: 11 - type: integer 
+	Parameter S_SET_STR2 bound to: 12 - type: integer 
+	Parameter S_WRITE2 bound to: 13 - type: integer 
+	Parameter S_SET_CURSOR bound to: 14 - type: integer 
+	Parameter S_WAIT_DATA bound to: 15 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/new/lcd_162st_alternative.v:109]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/new/lcd_162st_alternative.v:510]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_162st_alternative' (4#1) [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/new/lcd_162st_alternative.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_hex_converter' [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/bin_to_hex_converter.v:3]
+	Parameter A bound to: 8'b01000001 
+	Parameter B bound to: 8'b01000010 
+	Parameter C bound to: 8'b01000011 
+	Parameter D bound to: 8'b01000100 
+	Parameter E bound to: 8'b01000101 
+	Parameter F bound to: 8'b01000110 
+	Parameter x bound to: 8'b01111000 
+	Parameter CH0 bound to: 8'b00110000 
+	Parameter CH1 bound to: 8'b00110001 
+	Parameter CH2 bound to: 8'b00110010 
+	Parameter CH3 bound to: 8'b00110011 
+	Parameter CH4 bound to: 8'b00110100 
+	Parameter CH5 bound to: 8'b00110101 
+	Parameter CH6 bound to: 8'b00110110 
+	Parameter CH7 bound to: 8'b00110111 
+	Parameter CH8 bound to: 8'b00111000 
+	Parameter CH9 bound to: 8'b00111001 
+	Parameter LEFT bound to: 8'b10000000 
+	Parameter RIGHT bound to: 8'b00000001 
+	Parameter LINE2_POS3_IDX bound to: 8'b00010010 
+	Parameter LINE2_POS4_IDX bound to: 8'b00010011 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/bin_to_hex_converter.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_hex_converter' (5#1) [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/bin_to_hex_converter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main' (6#1) [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/new/main.v:3]
+WARNING: [Synth 8-3331] design lcd_162st_alternative has unconnected port addr[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 470.781 ; gain = 157.102
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 470.781 ; gain = 157.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 470.781 ; gain = 157.102
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/constrs_1/imports/constraints/vc707.xdc]
+Finished Parsing XDC File [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/constrs_1/imports/constraints/vc707.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/constrs_1/imports/constraints/vc707.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 982.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 982.070 ; gain = 668.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 982.070 ; gain = 668.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 982.070 ; gain = 668.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ST" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ST" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "E_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "DB" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "E" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element LCD_byte_tx_reg_rep was removed.  [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/new/lcd_162st_alternative.v:368]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/bin_to_hex_converter.v:159]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pavma/source/repos/vivado/lcd03/lcd03.srcs/sources_1/imports/modules/bin_to_hex_converter.v:159]
+INFO: [Synth 8-5546] ROM "WR_STAGE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WR_STAGE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "WR_STAGE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "timer" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "timer" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IDX" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DATA" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DATA" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DATA" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CURSOR" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:50 . Memory (MB): peak = 982.070 ; gain = 668.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 6     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	  16 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  32 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 38    
+	  16 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module switch_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module lcd_162st_alternative 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 6     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  16 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	  16 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 2     
+Module bin_to_hex_converter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   7 Input      8 Bit        Muxes := 1     
+	  32 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "lcdc/ST" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "lcdc/ST" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "lcdc/ST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lcdc/ST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lcdc/DB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lcdc/E" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btoh/WR_STAGE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'btoh/DATA_reg[4]' (FDSE) to 'btoh/DATA_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lcdc/LCD_byte_tx_reg_rep[0]' (FDE) to 'lcdc/LCD_byte_tx_reg[0]'
+INFO: [Synth 8-3886] merging instance 'lcdc/LCD_byte_tx_reg_rep[1]' (FDE) to 'lcdc/LCD_byte_tx_reg[1]'
+INFO: [Synth 8-3886] merging instance 'lcdc/LCD_byte_tx_reg_rep[2]' (FDE) to 'lcdc/LCD_byte_tx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lcdc/LCD_byte_tx_reg_rep[3]' (FDE) to 'lcdc/LCD_byte_tx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lcdc/LCD_byte_tx_reg_rep[4]' (FDE) to 'lcdc/LCD_byte_tx_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\btoh/DATA_reg[7] )
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[35]' (FDRE) to 'lcdc/E_timer_reg[34]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[34]' (FDRE) to 'lcdc/E_timer_reg[33]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[33]' (FDRE) to 'lcdc/E_timer_reg[32]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[32]' (FDRE) to 'lcdc/E_timer_reg[31]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[31]' (FDRE) to 'lcdc/E_timer_reg[30]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[30]' (FDRE) to 'lcdc/E_timer_reg[29]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[29]' (FDRE) to 'lcdc/E_timer_reg[28]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[28]' (FDRE) to 'lcdc/E_timer_reg[27]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[27]' (FDRE) to 'lcdc/E_timer_reg[25]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[26]' (FDRE) to 'lcdc/E_timer_reg[24]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[25]' (FDRE) to 'lcdc/E_timer_reg[19]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[24]' (FDRE) to 'lcdc/E_timer_reg[23]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[23]' (FDRE) to 'lcdc/E_timer_reg[22]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[22]' (FDRE) to 'lcdc/E_timer_reg[21]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[21]' (FDRE) to 'lcdc/E_timer_reg[20]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[20]' (FDRE) to 'lcdc/E_timer_reg[18]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[19]' (FDRE) to 'lcdc/E_timer_reg[17]'
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[18]' (FDRE) to 'lcdc/E_timer_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lcdc/E_timer_reg[17] )
+INFO: [Synth 8-3886] merging instance 'lcdc/E_timer_reg[16]' (FDRE) to 'lcdc/E_timer_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lcdc/RW_reg )
+WARNING: [Synth 8-3332] Sequential element (lcdc/E_timer_reg[17]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (btoh/DATA_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (lcdc/RW_reg) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:00 . Memory (MB): peak = 982.070 ; gain = 668.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------------+-----------+----------------------+--------------+
+|main        | lcdc/LCD_DATA_reg | Implied   | 32 x 8               | RAM32M x 2   | 
++------------+-------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:16 . Memory (MB): peak = 982.070 ; gain = 668.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:17 . Memory (MB): peak = 982.070 ; gain = 668.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------------+-----------+----------------------+--------------+
+|main        | lcdc/LCD_DATA_reg | Implied   | 32 x 8               | RAM32M x 2   | 
++------------+-------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 989.184 ; gain = 675.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 989.184 ; gain = 675.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 989.184 ; gain = 675.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 989.184 ; gain = 675.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 989.184 ; gain = 675.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 989.184 ; gain = 675.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 989.184 ; gain = 675.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    41|
+|3     |LUT1   |    13|
+|4     |LUT2   |    31|
+|5     |LUT3   |    44|
+|6     |LUT4   |    34|
+|7     |LUT5   |    35|
+|8     |LUT6   |    83|
+|9     |RAM32M |     2|
+|10    |FDRE   |   232|
+|11    |FDSE   |     6|
+|12    |IBUF   |     4|
+|13    |IBUFDS |     1|
+|14    |OBUF   |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+----------------------+------+
+|      |Instance  |Module                |Cells |
++------+----------+----------------------+------+
+|1     |top       |                      |   534|
+|2     |  btoh    |bin_to_hex_converter  |   162|
+|3     |  clk_gen |clk_generator         |     1|
+|4     |  eswc    |switch_controller     |    34|
+|5     |  lcdc    |lcd_162st_alternative |   221|
+|6     |  nswc    |switch_controller_0   |    35|
+|7     |  sswc    |switch_controller_1   |    36|
+|8     |  wswc    |switch_controller_2   |    33|
++------+----------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 989.184 ; gain = 675.504
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 989.184 ; gain = 164.215
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 989.184 ; gain = 675.504
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:30 . Memory (MB): peak = 1005.465 ; gain = 706.715
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pavma/source/repos/vivado/lcd03/lcd03.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.920 . Memory (MB): peak = 1005.465 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 30 00:14:18 2022...
