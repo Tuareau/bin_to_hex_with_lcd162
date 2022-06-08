@@ -1,0 +1,5 @@
+*.v linguist-language=Verilog
+lcd03/lcd03.cache/* linguist-vendored
+lcd03/lcd03.hw/* linguist-vendored
+lcd03/lcd03.ip_user_files/* linguist-vendored
+lcd03/lcd03.runs/* linguist-vendored
